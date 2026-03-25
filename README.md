@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/mageme/module-webforms-3-zendesk.svg)](https://packagist.org/packages/mageme/module-webforms-3-zendesk)
 [![Packagist Downloads](https://img.shields.io/packagist/dt/mageme/module-webforms-3-zendesk.svg)](https://packagist.org/packages/mageme/module-webforms-3-zendesk)
-[![License](https://img.shields.io/packagist/l/mageme/module-webforms-3-zendesk.svg)](https://mageme.com/license/)
+[![License: Proprietary](https://img.shields.io/badge/license-proprietary-blue.svg)](https://mageme.com/license/)
 
 Create Zendesk tickets from Magento 2 form submissions. This free add-on for [MageMe WebForms](https://mageme.com/magento-2-form-builder.html) bridges your storefront forms with Zendesk support — including custom field types, file attachments, and connection testing from the admin panel.
 
