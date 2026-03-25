@@ -1,0 +1,17 @@
+<?php
+
+/** @var $block TestConnection */
+
+use MageMe\WebFormsZendesk\Block\Adminhtml\System\TestConnection;
+
+?>
+<?php if ($block->getZendeskConfigured()): ?>
+    <button class="scalable" type="button" id="<?= $block->getHtmlId() ?>" data-mage-init='{"MageMe_WebFormsZendesk/js/testconnection":{
+        "url": "<?= /* @escapeNotVerified */ $block->getAjaxUrl() ?>",
+        "elementId": "<?= $block->getHtmlId() ?>",
+        "successText": "<?= /* @escapeNotVerified */ __('Successful! Test again?') ?>",
+        "failedText": "<?= /* @escapeNotVerified */ __('Connection failed! Test again?') ?>"
+        }}'>
+        <span><span><span id="<?= $block->getHtmlId() ?>_result"><?= $block->escapeHtml($block->getButtonLabel()) ?></span></span></span>
+    </button>
+<?php endif; ?>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<webforms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="urn:magento:module:MageMe_WebForms:etc/webforms.xsd">
+    <field_types>
+        <type id="zendesk_group_select"
+              order="400">
+            <label>Zendesk Group</label>
+            <model>MageMe\WebFormsZendesk\Model\Field\Type\ZendeskGroup</model>
+            <category>Zendesk</category>
+            <logic>true</logic>
+        </type>
+        <type id="zendesk_priority_select"
+              order="410">
+            <label>Zendesk Priority</label>
+            <model>MageMe\WebFormsZendesk\Model\Field\Type\ZendeskPriority</model>
+            <category>Zendesk</category>
+            <logic>true</logic>
+        </type>
+        <type id="zendesk_type_select"
+              order="420">
+            <label>Zendesk Type</label>
+            <model>MageMe\WebFormsZendesk\Model\Field\Type\ZendeskType</model>
+            <category>Zendesk</category>
+            <logic>true</logic>
+        </type>
+    </field_types>
+</webforms>

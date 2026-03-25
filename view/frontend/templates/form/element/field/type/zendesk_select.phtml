@@ -1,0 +1,39 @@
+<?php
+/**
+ * @var AbstractZendeskSelect $block
+ */
+
+use MageMe\WebFormsZendesk\Block\Form\Element\Field\Type\AbstractZendeskSelect;
+
+$validationRules = $block->getValidationRules();
+$validationDescriptions = $block->getValidationDescriptions();
+?>
+<select id='<?= $block->getFieldId() ?>'
+        name='<?= $block->getFieldName() ?>'
+        class='<?= $block->getFieldClass() ?>'
+        style='<?= $block->getFieldStyle() ?>'
+    <?php if ($validationRules) { ?>
+        data-validate="{<?= implode(", ", $validationRules); ?>}"
+    <?php } ?>
+    <?php foreach ($validationDescriptions as $key => $data) {
+        echo $key . '=' . '"' . $data . '"';
+    }
+    ?>
+        <?php if ($block->getIsLabelHidden()) { ?>aria-label="<?= $block->getFieldLabel() ?>"
+<?php } else { ?> aria-labelledby="label_<?= $block->getFieldId() ?>" <?php } ?>
+        <?php if ($block->getIsRequired()) { ?>aria-required="true"<?php } ?>
+        <?php if ($block->getAutocomplete()) { ?>autocomplete="<?= $block->getAutocomplete() ?>" <?php } ?>
+    <?php if ($block->getIsDisabled()) { ?> disabled <?php } ?>
+    <?= htmlspecialchars((string)$block->getCustomAttributes()) ?>
+>
+    <?php
+    foreach ($block->getFieldOptions() as $option) {
+        if (!isset($option['value'], $option['label'])) {
+            continue;
+        }
+    ?>
+        <option value="<?= $option['value'] ?>"><?= $option['label'] ?></option>
+    <?php
+    }
+    ?>
+</select>

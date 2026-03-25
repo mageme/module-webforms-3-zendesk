@@ -1,0 +1,14 @@
+{
+    "mm_webforms_form": {
+        "column": {
+            "is_zendesk_enabled": true,
+            "zendesk_email_field_id": true,
+            "zendesk_group": true,
+            "zendesk_priority": true,
+            "zendesk_type": true,
+            "zendesk_followers_serialized": true,
+            "zendesk_tags": true,
+            "zendesk_map_fields_serialized": true
+        }
+    }
+}

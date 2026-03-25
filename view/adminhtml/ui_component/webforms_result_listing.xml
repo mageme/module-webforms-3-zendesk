@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing>
+    <listingToolbar name="listing_top">
+        <massaction name="listing_massaction">
+            <action name="massZendeskCreateTicketForGroup"
+                    class="MageMe\WebFormsZendesk\Ui\Component\Result\Listing\MassActions\SubActions\CreateTicketForGroup">
+                <settings>
+                    <type>zendesk_create_ticket_for_group</type>
+                    <label translate="true">Zendesk Assign Group</label>
+                </settings>
+            </action>
+        </massaction>
+    </listingToolbar>
+</listing>

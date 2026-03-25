@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * MageMe
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MageMe.com license that is
+ * available through the world-wide-web at this URL:
+ * https://mageme.com/license
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to a newer
+ * version in the future.
+ *
+ * Copyright (c) MageMe (https://mageme.com)
+ **/
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+
+    <table name="mm_webforms_form" resource="default" engine="innodb">
+        <!-- Zendesk Settings -->
+        <column xsi:type="boolean" name="is_zendesk_enabled" nullable="false" default="0" comment="Zendesk integration enabled"/>
+        <column xsi:type="int" name="zendesk_email_field_id" unsigned="true" nullable="true" comment="Zendesk Email Override"/>
+        <column xsi:type="text" name="zendesk_group" nullable="true" comment="Zendesk Group"/>
+        <column xsi:type="text" name="zendesk_priority" nullable="true" comment="Zendesk Priority"/>
+        <column xsi:type="text" name="zendesk_type" nullable="true" comment="Zendesk Type"/>
+        <column xsi:type="text" name="zendesk_followers_serialized" nullable="true" comment="Zendesk Followers in JSON"/>
+        <column xsi:type="text" name="zendesk_tags" nullable="true" comment="Zendesk Tags"/>
+        <column xsi:type="text" name="zendesk_map_fields_serialized" nullable="true" comment="Zendesk Map Fields in JSON"/>
+    </table>
+
+</schema>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="MageMe\WebForms\Model\ResourceModel\Form">
+        <plugin name="webforms_zendesk_add_serializable_fields"
+                type="MageMe\WebFormsZendesk\Plugin\MageMe\WebForms\Model\ResourceModel\Form\GetSerializableFields"
+                sortOrder="20" disabled="false"/>
+    </type>
+    <type name="MageMe\WebForms\Helper\Result\PostHelper">
+        <plugin name="webforms_zendesk_ticket"
+                type="MageMe\WebFormsZendesk\Plugin\MageMe\WebForms\Helper\Result\PostHelper\PostResult"
+                sortOrder="30" disabled="false"/>
+    </type>
+    <type name="MageMe\WebFormsZendesk\Model\Field\Type\ZendeskGroup">
+        <arguments>
+            <argument name="fieldUi" xsi:type="object">MageMe\WebFormsZendesk\Ui\Field\Type\ZendeskGroup</argument>
+            <argument name="fieldBlock" xsi:type="object">MageMe\WebFormsZendesk\Block\Form\Element\Field\Type\ZendeskGroup</argument>
+        </arguments>
+    </type>
+    <type name="MageMe\WebFormsZendesk\Model\Field\Type\ZendeskPriority">
+        <arguments>
+            <argument name="fieldUi" xsi:type="object">MageMe\WebFormsZendesk\Ui\Field\Type\ZendeskPriority</argument>
+            <argument name="fieldBlock" xsi:type="object">MageMe\WebFormsZendesk\Block\Form\Element\Field\Type\ZendeskPriority</argument>
+        </arguments>
+    </type>
+    <type name="MageMe\WebFormsZendesk\Model\Field\Type\ZendeskType">
+        <arguments>
+            <argument name="fieldUi" xsi:type="object">MageMe\WebFormsZendesk\Ui\Field\Type\ZendeskType</argument>
+            <argument name="fieldBlock" xsi:type="object">MageMe\WebFormsZendesk\Block\Form\Element\Field\Type\ZendeskType</argument>
+        </arguments>
+    </type>
+</config>
