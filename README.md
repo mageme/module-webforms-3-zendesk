@@ -1,8 +1,10 @@
-# Magento 2 Zendesk Integration — MageMe WebForms
+# MageMe WebForms Zendesk for Magento 2
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/mageme/module-webforms-3-zendesk.svg)](https://packagist.org/packages/mageme/module-webforms-3-zendesk)
-[![Packagist Downloads](https://img.shields.io/packagist/dt/mageme/module-webforms-3-zendesk.svg)](https://packagist.org/packages/mageme/module-webforms-3-zendesk)
-[![License: Proprietary](https://img.shields.io/badge/license-proprietary-blue.svg)](https://mageme.com/license/)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/mageme/module-webforms-3-zendesk.svg?style=flat-square)](https://packagist.org/packages/mageme/module-webforms-3-zendesk)
+[![Packagist Downloads](https://img.shields.io/packagist/dt/mageme/module-webforms-3-zendesk.svg?style=flat-square)](https://packagist.org/packages/mageme/module-webforms-3-zendesk)
+[![Magento](https://img.shields.io/badge/Magento-2.4.x-EE672F.svg?style=flat-square)](https://magento.com)
+[![PHP](https://img.shields.io/badge/PHP-7.4%20–%208.5-777BB4.svg?style=flat-square)](https://php.net)
+[![License](https://img.shields.io/badge/license-MageMe%20EULA-blue.svg?style=flat-square)](https://mageme.com/license/)
 
 Create Zendesk tickets from Magento 2 form submissions. This free add-on for [MageMe WebForms](https://mageme.com/magento-2-form-builder.html) bridges your storefront forms with Zendesk support — including custom field types, file attachments, and connection testing from the admin panel.
 
@@ -49,17 +51,21 @@ Handle every customer touchpoint with the right platform:
 - [Mailchimp](https://github.com/mageme/module-webforms-3-mailchimp) — subscribe customers to audiences
 - [Zapier](https://github.com/mageme/module-webforms-3-zapier) — connect forms to 7000+ apps
 
-## About MageMe WebForms
+## Custom Magento development
 
-[MageMe WebForms](https://mageme.com/magento-2-form-builder.html) is a Magento 2 form builder that helps store owners collect and manage customer data. Build support request forms, product inquiry forms, return forms, and feedback surveys with conditional logic, file uploads, email notifications, and helpdesk integrations — without custom development.
+Need a feature an extension doesn't cover, or a bespoke Magento build? MageMe takes on custom extension development and integration work.
 
-[Get MageMe WebForms for Magento 2](https://mageme.com/magento-2-form-builder.html)
+→ **[Custom Magento development](https://mageme.com/magento-services/custom-development)**
 
 ## Support
 
 - Documentation: [docs.mageme.com](https://docs.mageme.com)
-- Issue Tracker: [GitHub Issues](https://github.com/mageme/module-webforms-3-zendesk/issues)
+- Bug reports and feature requests: [GitHub Issues](https://github.com/mageme/module-webforms-3-zendesk/issues)
 
 ## License
 
-Proprietary. See [License](https://mageme.com/license/) for details.
+Governed by the **MageMe End User License Agreement** ([mageme.com/license](https://mageme.com/license/)). This add-on is distributed free of charge.
+
+---
+
+**MageMe WebForms** is a no-code form builder for Magento 2 — conditional logic, multi-step forms, file uploads, and CRM integrations. → [Get WebForms](https://mageme.com/magento-2-form-builder.html) · [Browse all extensions](https://mageme.com/extensions)
