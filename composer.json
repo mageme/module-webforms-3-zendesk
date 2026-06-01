@@ -11,8 +11,7 @@
     },
     "require": {
         "mageme/module-webforms-3": ">=3.5.0",
-        "zendesk/zendesk_api_client_php": "^2.2",
-        "ext-json": "*"
+        "zendesk/zendesk_api_client_php": "^2.2"
     },
     "autoload": {
         "files": [
